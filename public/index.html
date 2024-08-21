@@ -5,12 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I'm Rav</title>
     <style>
-        /* Add some basic styling here */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 0;
+            background-color: #ffffd0; /* Light yellow background */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
             padding: 20px;
+        }
+
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 10px;
         }
 
         @keyframes flash {
