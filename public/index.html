@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I'm Rav</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         html, body {
             height: 100%;
-            margin: 10%;
+            margin: 0;
             padding: 0;
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             background-color: #ffffd0; /* Light yellow background */
             display: flex;
@@ -21,7 +22,20 @@
         }
 
         header {
-            padding-top: 20px; /* Reduced from previous value */
+            padding-top: 20px;
+            text-align: center; /* Center align the header content */
+        }
+
+        h1, h2 {
+            margin: 0; /* Remove default margins */
+        }
+
+        h1 {
+            display: inline-block; /* Allow the wave animation to work properly */
+        }
+
+        h2 {
+            margin-top: 10px; /* Add some space between h1 and h2 */
         }
 
         main {
@@ -31,9 +45,8 @@
         }
 
         footer {
-            background-color: #ffffd0;
-            text-align: center;
-            padding: 10px;
+            background-color: #f4f4f4;
+            padding: 10px 20px;
             margin-top: auto;
             display: flex;
             justify-content: space-between;
@@ -48,11 +61,16 @@
         .social-links a {
             text-decoration: none;
             color: #333;
+            font-weight: bold;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
         }
 
         @keyframes wave {
             0%, 100% { transform: translateY(0); }
-             50% { transform: translateY(-15px); }
+            50% { transform: translateY(-15px); }
         }
 
         h1 span {
@@ -75,9 +93,9 @@
             <span>e</span>
             <span>y</span>
         </h1>
+        <h2>I'm Rav Singh Sandhu</h2>
     </header>
     <main>
-        <h2>I'm Rav Singh Sandhu</h2>
         <p>I'm a startup founder building cool things! <a href="https://www.catapult.xyz">Catapult</a> is my second startup. Before that I built Market Mogul and Mogul News. I've also been fortunate to do stints at Meta, Bain & Co, JP Morgan and Goldman Sachs.before which i worked at Facebook.</p>
         <!-- Add more content here -->
     </main>
